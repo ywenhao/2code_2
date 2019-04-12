@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			二维码美化 二维码模板 在线二维码生成器 - 联图二维码
+		</title>
+		<meta name="keywords" content="二维码美化,二维码模板,美化二维码,创意二维码,个性二维码,在线二维码生成器"
+		/>
+		<meta name="description" content="联图二维码提供一百多套二维码美化模板，该二维码生成器可快速美化成想要生的二维码图片，只需选择不同的美化模板，无需任何PS技术，即可把普通黑白二维码在线设计的更加创意，更加个性。"
+		/>
+		<link rel="stylesheet" href="resource/style/dist/public/common.css">
+		<link rel="stylesheet" href="resource/style/dist/index.css">
+		<link rel="canonical" href="http://www.liantu.com/meihua/" />
+		<script type="text/javascript">
+			var CONFIG = {
+				'wwwUrl': '/',
+				'scriptUrl': 'resource/script/dist/',
+				'imageUrl': 'resource/image/'
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="inner">
+					<div class="mod-head">
+						<h1><a href="/"><img src="resource/image/public/logo.gif" alt="二维码"></a></h1>
+						<ul>
+							<li>
+							<a class="icon" href="/">二维码生成</a>
+							<div class="subnav">
+								<a href="/">二维码生成</a>
+								<a href="/shiliang/">矢量二维码</a>
+							</div>
+							</li>
+							<li class="active"><a href="/meihua/">二维码美化</a></li>
+							<li><a href="/dianshangma/">电商码</a></li>
+							<li><a href="/tiaoma/">商品条码查询</a></li>
+							
+							<li><a href="http://user.liantu.com/live/" rel="nofollow" target="_blank">活码</a></li>
+            				<li><a href="http://user.liantu.com/platform/" rel="nofollow" target="_blank">平台码</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="inner">
+					<div class="module mod-view">
+						<div class="bd">
+							<canvas id="canvas" width="960" height="960">当前浏览器不支持画布</canvas>
+						</div>
+						<div class="ft">
+							<p>
+								<label for="text">输入文本内容</label>
+								<textarea name="text" id="text" placeholder="支持文本、网址和电子邮箱"></textarea>
+							</p>
+							<p>
+								<label for="size">选择尺寸</label>
+								<input type="range" name="size" id="size" min="300" max="960" step="1"
+								value="960" />
+								<input type="number" name="value" min="300" max="960" step="1" value="960"
+								/>
+							</p>
+							<p>
+								<a id="savaImage" class="btn" href="javascript:;" download="二维码美化">下载二维码</a>
+								<span class="error">
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="module mod-store">
+						<div class="hd">
+							<h3>二维码美化模板</h3>
+						</div>
+						<div class="bd">
+							<ul class="nav">
+																	<li>
+										<a href="javascript:;">
+											风格流派										</a>
+									</li>
+																	<li>
+										<a href="javascript:;">
+											材质风格										</a>
+									</li>
+																	<li>
+										<a href="javascript:;">
+											抽象几何										</a>
+									</li>
+																	<li>
+										<a href="javascript:;">
+											色彩搭配										</a>
+									</li>
+																	<li>
+										<a href="javascript:;">
+											故事主题										</a>
+									</li>
+															</ul>
+							<div class="panels">
+																	<div class="panel">
+										<ul>
+																							<li>
+													<label for="radio-default">
+														<input id="radio-default" type="radio" name="template" value="default">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/default.png"
+														alt="默认二维码" width="146" height="146">
+														<span>
+															默认														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-england">
+														<input id="radio-england" type="radio" name="template" value="england">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/england.png"
+														alt="英伦风二维码" width="146" height="146">
+														<span>
+															英伦风														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-china">
+														<input id="radio-china" type="radio" name="template" value="china">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/china.png"
+														alt="中国风二维码" width="146" height="146">
+														<span>
+															中国风														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-zen">
+														<input id="radio-zen" type="radio" name="template" value="zen">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/zen.png"
+														alt="禅二维码" width="146" height="146">
+														<span>
+															禅														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-word">
+														<input id="radio-word" type="radio" name="template" value="word">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/word.png"
+														alt="汉字二维码" width="146" height="146">
+														<span>
+															汉字														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-painting">
+														<input id="radio-painting" type="radio" name="template" value="painting">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/painting.png"
+														alt="素描画二维码" width="146" height="146">
+														<span>
+															素描画														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-art">
+														<input id="radio-dot-art" type="radio" name="template" value="dot-art">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-art.png"
+														alt="波尔卡圆点二维码" width="146" height="146">
+														<span>
+															波尔卡圆点														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-art2">
+														<input id="radio-dot-art2" type="radio" name="template" value="dot-art2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-art2.png"
+														alt="波尔卡圆点2二维码" width="146" height="146">
+														<span>
+															波尔卡圆点2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-art3">
+														<input id="radio-dot-art3" type="radio" name="template" value="dot-art3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-art3.png"
+														alt="波尔卡圆点3二维码" width="146" height="146">
+														<span>
+															波尔卡圆点3														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-art4">
+														<input id="radio-dot-art4" type="radio" name="template" value="dot-art4">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-art4.png"
+														alt="波尔卡圆点4二维码" width="146" height="146">
+														<span>
+															波尔卡圆点4														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-cold">
+														<input id="radio-cold" type="radio" name="template" value="cold">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/cold.png"
+														alt="冷抽象二维码" width="146" height="146">
+														<span>
+															冷抽象														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-graffiti">
+														<input id="radio-graffiti" type="radio" name="template" value="graffiti">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/graffiti.png"
+														alt="街头涂鸦二维码" width="146" height="146">
+														<span>
+															街头涂鸦														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-van-gogh">
+														<input id="radio-van-gogh" type="radio" name="template" value="van-gogh">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/van-gogh.png"
+														alt="梵高 星空二维码" width="146" height="146">
+														<span>
+															梵高 星空														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-picasso">
+														<input id="radio-picasso" type="radio" name="template" value="picasso">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/picasso.png"
+														alt="毕加索二维码" width="146" height="146">
+														<span>
+															毕加索														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-picasso2">
+														<input id="radio-picasso2" type="radio" name="template" value="picasso2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/picasso2.png"
+														alt="毕加索 亚威农少女二维码" width="146" height="146">
+														<span>
+															毕加索 亚威农少女														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-edvard-munch">
+														<input id="radio-edvard-munch" type="radio" name="template" value="edvard-munch">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/edvard-munch.png"
+														alt="蒙克
+	呐喊二维码" width="146" height="146">
+														<span>
+															蒙克
+	呐喊														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-art">
+														<input id="radio-art" type="radio" name="template" value="art">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/art.png"
+														alt="波普艺术二维码" width="146" height="146">
+														<span>
+															波普艺术														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-art2">
+														<input id="radio-art2" type="radio" name="template" value="art2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/art2.png"
+														alt="波普艺术2二维码" width="146" height="146">
+														<span>
+															波普艺术2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-art3">
+														<input id="radio-art3" type="radio" name="template" value="art3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/art3.png"
+														alt="波普艺术3二维码" width="146" height="146">
+														<span>
+															波普艺术3														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-art4">
+														<input id="radio-art4" type="radio" name="template" value="art4">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/art4.png"
+														alt="波普艺术4二维码" width="146" height="146">
+														<span>
+															波普艺术4														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-marilyn-monroe">
+														<input id="radio-marilyn-monroe" type="radio" name="template" value="marilyn-monroe">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/marilyn-monroe.png"
+														alt="玛丽莲梦露二维码" width="146" height="146">
+														<span>
+															玛丽莲梦露														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-surrealism">
+														<input id="radio-surrealism" type="radio" name="template" value="surrealism">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/surrealism.png"
+														alt="超现实主义二维码" width="146" height="146">
+														<span>
+															超现实主义														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-jimmy">
+														<input id="radio-jimmy" type="radio" name="template" value="jimmy">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/jimmy.png"
+														alt="几米漫画二维码" width="146" height="146">
+														<span>
+															几米漫画														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-ipod">
+														<input id="radio-ipod" type="radio" name="template" value="ipod">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/ipod.png"
+														alt="iPod广告二维码" width="146" height="146">
+														<span>
+															iPod广告														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-ipod2">
+														<input id="radio-ipod2" type="radio" name="template" value="ipod2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/ipod2.png"
+														alt="iPod广告2二维码" width="146" height="146">
+														<span>
+															iPod广告2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-ipod3">
+														<input id="radio-ipod3" type="radio" name="template" value="ipod3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/ipod3.png"
+														alt="iPod广告3二维码" width="146" height="146">
+														<span>
+															iPod广告3														</span>
+													</label>
+												</li>
+																					</ul>
+									</div>
+																	<div class="panel">
+										<ul>
+																							<li>
+													<label for="radio-jeans">
+														<input id="radio-jeans" type="radio" name="template" value="jeans">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/jeans.png"
+														alt="牛仔二维码" width="146" height="146">
+														<span>
+															牛仔														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-flax">
+														<input id="radio-flax" type="radio" name="template" value="flax">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/flax.png"
+														alt="亚麻二维码" width="146" height="146">
+														<span>
+															亚麻														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-wood">
+														<input id="radio-wood" type="radio" name="template" value="wood">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/wood.png"
+														alt="木头二维码" width="146" height="146">
+														<span>
+															木头														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-grass">
+														<input id="radio-grass" type="radio" name="template" value="grass">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/grass.png"
+														alt="草地二维码" width="146" height="146">
+														<span>
+															草地														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-leather">
+														<input id="radio-leather" type="radio" name="template" value="leather">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/leather.png"
+														alt="皮革二维码" width="146" height="146">
+														<span>
+															皮革														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-leopard">
+														<input id="radio-leopard" type="radio" name="template" value="leopard">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/leopard.png"
+														alt="豹纹二维码" width="146" height="146">
+														<span>
+															豹纹														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-metal">
+														<input id="radio-metal" type="radio" name="template" value="metal">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/metal.png"
+														alt="铁锈二维码" width="146" height="146">
+														<span>
+															铁锈														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-inkjet">
+														<input id="radio-inkjet" type="radio" name="template" value="inkjet">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/inkjet.png"
+														alt="喷墨二维码" width="146" height="146">
+														<span>
+															喷墨														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-inkjet2">
+														<input id="radio-inkjet2" type="radio" name="template" value="inkjet2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/inkjet2.png"
+														alt="喷墨2二维码" width="146" height="146">
+														<span>
+															喷墨2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-inkjet3">
+														<input id="radio-inkjet3" type="radio" name="template" value="inkjet3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/inkjet3.png"
+														alt="喷墨3二维码" width="146" height="146">
+														<span>
+															喷墨3														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-marble">
+														<input id="radio-marble" type="radio" name="template" value="marble">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/marble.png"
+														alt="大理石二维码" width="146" height="146">
+														<span>
+															大理石														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-marble2">
+														<input id="radio-marble2" type="radio" name="template" value="marble2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/marble2.png"
+														alt="大理石2二维码" width="146" height="146">
+														<span>
+															大理石2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-scrawl">
+														<input id="radio-scrawl" type="radio" name="template" value="scrawl">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/scrawl.png"
+														alt="涂鸦二维码" width="146" height="146">
+														<span>
+															涂鸦														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-wall">
+														<input id="radio-wall" type="radio" name="template" value="wall">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/wall.png"
+														alt="水泥墙二维码" width="146" height="146">
+														<span>
+															水泥墙														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-floor">
+														<input id="radio-floor" type="radio" name="template" value="floor">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/floor.png"
+														alt="地板二维码" width="146" height="146">
+														<span>
+															地板														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-paper">
+														<input id="radio-paper" type="radio" name="template" value="paper">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/paper.png"
+														alt="牛皮纸二维码" width="146" height="146">
+														<span>
+															牛皮纸														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-carpet">
+														<input id="radio-carpet" type="radio" name="template" value="carpet">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/carpet.png"
+														alt="地毯二维码" width="146" height="146">
+														<span>
+															地毯														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-tile">
+														<input id="radio-tile" type="radio" name="template" value="tile">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/tile.png"
+														alt="瓷砖二维码" width="146" height="146">
+														<span>
+															瓷砖														</span>
+													</label>
+												</li>
+																					</ul>
+									</div>
+																	<div class="panel">
+										<ul>
+																							<li>
+													<label for="radio-water">
+														<input id="radio-water" type="radio" name="template" value="water">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/water.png"
+														alt="液态1二维码" width="146" height="146">
+														<span>
+															液态1														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-water2">
+														<input id="radio-water2" type="radio" name="template" value="water2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/water2.png"
+														alt="液态2二维码" width="146" height="146">
+														<span>
+															液态2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-break">
+														<input id="radio-break" type="radio" name="template" value="break">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/break.png"
+														alt="破碎二维码" width="146" height="146">
+														<span>
+															破碎														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-cross">
+														<input id="radio-cross" type="radio" name="template" value="cross">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/cross.png"
+														alt="编织二维码" width="146" height="146">
+														<span>
+															编织														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-triangle">
+														<input id="radio-triangle" type="radio" name="template" value="triangle">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/triangle.png"
+														alt="三角形二维码" width="146" height="146">
+														<span>
+															三角形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-trapezoid">
+														<input id="radio-trapezoid" type="radio" name="template" value="trapezoid">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/trapezoid.png"
+														alt="梯形二维码" width="146" height="146">
+														<span>
+															梯形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-mosaic">
+														<input id="radio-mosaic" type="radio" name="template" value="mosaic">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/mosaic.png"
+														alt="马赛克二维码" width="146" height="146">
+														<span>
+															马赛克														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-low-poly">
+														<input id="radio-low-poly" type="radio" name="template" value="low-poly">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/low-poly.png"
+														alt="折纸二维码" width="146" height="146">
+														<span>
+															折纸														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-strip">
+														<input id="radio-strip" type="radio" name="template" value="strip">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/strip.png"
+														alt="缎带二维码" width="146" height="146">
+														<span>
+															缎带														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-bar">
+														<input id="radio-bar" type="radio" name="template" value="bar">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/bar.png"
+														alt="条状二维码" width="146" height="146">
+														<span>
+															条状														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot">
+														<input id="radio-dot" type="radio" name="template" value="dot">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot.png"
+														alt="波点二维码" width="146" height="146">
+														<span>
+															波点														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-square">
+														<input id="radio-square" type="radio" name="template" value="square">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/square.png"
+														alt="方块二维码" width="146" height="146">
+														<span>
+															方块														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-cute">
+														<input id="radio-cute" type="radio" name="template" value="cute">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/cute.png"
+														alt="扭动二维码" width="146" height="146">
+														<span>
+															扭动														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-grating">
+														<input id="radio-grating" type="radio" name="template" value="grating">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/grating.png"
+														alt="光栅二维码" width="146" height="146">
+														<span>
+															光栅														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-star">
+														<input id="radio-star" type="radio" name="template" value="star">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/star.png"
+														alt="星星二维码" width="146" height="146">
+														<span>
+															星星														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-star2">
+														<input id="radio-star2" type="radio" name="template" value="star2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/star2.png"
+														alt="星星2二维码" width="146" height="146">
+														<span>
+															星星2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-rect">
+														<input id="radio-rect" type="radio" name="template" value="rect">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/rect.png"
+														alt="正方形二维码" width="146" height="146">
+														<span>
+															正方形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-rect2">
+														<input id="radio-rect2" type="radio" name="template" value="rect2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/rect2.png"
+														alt="正方形2二维码" width="146" height="146">
+														<span>
+															正方形2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-diamond">
+														<input id="radio-diamond" type="radio" name="template" value="diamond">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/diamond.png"
+														alt="菱形二维码" width="146" height="146">
+														<span>
+															菱形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-diamond2">
+														<input id="radio-diamond2" type="radio" name="template" value="diamond2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/diamond2.png"
+														alt="菱形2二维码" width="146" height="146">
+														<span>
+															菱形2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-hexagon">
+														<input id="radio-hexagon" type="radio" name="template" value="hexagon">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/hexagon.png"
+														alt="六边形二维码" width="146" height="146">
+														<span>
+															六边形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-bar">
+														<input id="radio-dot-bar" type="radio" name="template" value="dot-bar">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-bar.png"
+														alt="圆块二维码" width="146" height="146">
+														<span>
+															圆块														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-bezier">
+														<input id="radio-bezier" type="radio" name="template" value="bezier">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/bezier.png"
+														alt="贝塞尔曲线二维码" width="146" height="146">
+														<span>
+															贝塞尔曲线														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-heart">
+														<input id="radio-heart" type="radio" name="template" value="heart">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/heart.png"
+														alt="桃心二维码" width="146" height="146">
+														<span>
+															桃心														</span>
+													</label>
+												</li>
+																					</ul>
+									</div>
+																	<div class="panel">
+										<ul>
+																							<li>
+													<label for="radio-colorful">
+														<input id="radio-colorful" type="radio" name="template" value="colorful">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/colorful.png"
+														alt="炫彩二维码" width="146" height="146">
+														<span>
+															炫彩														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-colorful2">
+														<input id="radio-colorful2" type="radio" name="template" value="colorful2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/colorful2.png"
+														alt="炫彩2二维码" width="146" height="146">
+														<span>
+															炫彩2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-colorful3">
+														<input id="radio-colorful3" type="radio" name="template" value="colorful3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/colorful3.png"
+														alt="炫彩3二维码" width="146" height="146">
+														<span>
+															炫彩3														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-colorful4">
+														<input id="radio-colorful4" type="radio" name="template" value="colorful4">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/colorful4.png"
+														alt="炫彩4二维码" width="146" height="146">
+														<span>
+															炫彩4														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-profusion">
+														<input id="radio-profusion" type="radio" name="template" value="profusion">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/profusion.png"
+														alt="缤纷二维码" width="146" height="146">
+														<span>
+															缤纷														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-profusion2">
+														<input id="radio-profusion2" type="radio" name="template" value="profusion2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/profusion2.png"
+														alt="缤纷2二维码" width="146" height="146">
+														<span>
+															缤纷2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-strips">
+														<input id="radio-strips" type="radio" name="template" value="strips">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/strips.png"
+														alt="彩色缎带二维码" width="146" height="146">
+														<span>
+															彩色缎带														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-bars">
+														<input id="radio-bars" type="radio" name="template" value="bars">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/bars.png"
+														alt="彩色条状二维码" width="146" height="146">
+														<span>
+															彩色条状														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dots">
+														<input id="radio-dots" type="radio" name="template" value="dots">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dots.png"
+														alt="彩色波点二维码" width="146" height="146">
+														<span>
+															彩色波点														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-squares">
+														<input id="radio-squares" type="radio" name="template" value="squares">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/squares.png"
+														alt="彩色方块二维码" width="146" height="146">
+														<span>
+															彩色方块														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-ribbon">
+														<input id="radio-ribbon" type="radio" name="template" value="ribbon">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/ribbon.png"
+														alt="彩带二维码" width="146" height="146">
+														<span>
+															彩带														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-stars">
+														<input id="radio-stars" type="radio" name="template" value="stars">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/stars.png"
+														alt="彩色星星二维码" width="146" height="146">
+														<span>
+															彩色星星														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-stars2">
+														<input id="radio-stars2" type="radio" name="template" value="stars2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/stars2.png"
+														alt="星辰二维码" width="146" height="146">
+														<span>
+															星辰														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-stars3">
+														<input id="radio-stars3" type="radio" name="template" value="stars3">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/stars3.png"
+														alt="美利坚二维码" width="146" height="146">
+														<span>
+															美利坚														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-rects">
+														<input id="radio-rects" type="radio" name="template" value="rects">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/rects.png"
+														alt="彩色正方形二维码" width="146" height="146">
+														<span>
+															彩色正方形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-rects2">
+														<input id="radio-rects2" type="radio" name="template" value="rects2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/rects2.png"
+														alt="彩色正方形2二维码" width="146" height="146">
+														<span>
+															彩色正方形2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-hexagons">
+														<input id="radio-hexagons" type="radio" name="template" value="hexagons">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/hexagons.png"
+														alt="彩色六边形二维码" width="146" height="146">
+														<span>
+															彩色六边形														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-dot-bars">
+														<input id="radio-dot-bars" type="radio" name="template" value="dot-bars">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/dot-bars.png"
+														alt="彩色圆块二维码" width="146" height="146">
+														<span>
+															彩色圆块														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-stroke">
+														<input id="radio-stroke" type="radio" name="template" value="stroke">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/stroke.png"
+														alt="描边二维码" width="146" height="146">
+														<span>
+															描边														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-texture">
+														<input id="radio-texture" type="radio" name="template" value="texture">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/texture.png"
+														alt="纹理二维码" width="146" height="146">
+														<span>
+															纹理														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-texture2">
+														<input id="radio-texture2" type="radio" name="template" value="texture2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/texture2.png"
+														alt="纹理2二维码" width="146" height="146">
+														<span>
+															纹理2														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-cube">
+														<input id="radio-cube" type="radio" name="template" value="cube">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/cube.png"
+														alt="幻方二维码" width="146" height="146">
+														<span>
+															幻方														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-sky">
+														<input id="radio-sky" type="radio" name="template" value="sky">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/sky.png"
+														alt="星空二维码" width="146" height="146">
+														<span>
+															星空														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-city">
+														<input id="radio-city" type="radio" name="template" value="city">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/city.png"
+														alt="月色二维码" width="146" height="146">
+														<span>
+															月色														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-forest">
+														<input id="radio-forest" type="radio" name="template" value="forest">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/forest.png"
+														alt="秋色二维码" width="146" height="146">
+														<span>
+															秋色														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-simple">
+														<input id="radio-simple" type="radio" name="template" value="simple">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/simple.png"
+														alt="简洁二维码" width="146" height="146">
+														<span>
+															简洁														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-simple2">
+														<input id="radio-simple2" type="radio" name="template" value="simple2">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/simple2.png"
+														alt="简洁2二维码" width="146" height="146">
+														<span>
+															简洁2														</span>
+													</label>
+												</li>
+																					</ul>
+									</div>
+																	<div class="panel">
+										<ul>
+																							<li>
+													<label for="radio-mario">
+														<input id="radio-mario" type="radio" name="template" value="mario">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/mario.png"
+														alt="超级玛丽二维码" width="146" height="146">
+														<span>
+															超级玛丽														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-pacman">
+														<input id="radio-pacman" type="radio" name="template" value="pacman">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/pacman.png"
+														alt="吃豆人二维码" width="146" height="146">
+														<span>
+															吃豆人														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-battle">
+														<input id="radio-battle" type="radio" name="template" value="battle">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/battle.png"
+														alt="坦克大战二维码" width="146" height="146">
+														<span>
+															坦克大战														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-angelbird">
+														<input id="radio-angelbird" type="radio" name="template" value="angelbird">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/angelbird.png"
+														alt="愤怒的小鸟二维码" width="146" height="146">
+														<span>
+															愤怒的小鸟														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-christmas">
+														<input id="radio-christmas" type="radio" name="template" value="christmas">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/christmas.png"
+														alt="冰雪世界二维码" width="146" height="146">
+														<span>
+															冰雪世界														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-deer">
+														<input id="radio-deer" type="radio" name="template" value="deer">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/deer.png"
+														alt="森林鹿二维码" width="146" height="146">
+														<span>
+															森林鹿														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-doraemon">
+														<input id="radio-doraemon" type="radio" name="template" value="doraemon">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/doraemon.png"
+														alt="哆啦A梦二维码" width="146" height="146">
+														<span>
+															哆啦A梦														</span>
+													</label>
+												</li>
+																							<li>
+													<label for="radio-matrix">
+														<input id="radio-matrix" type="radio" name="template" value="matrix">
+														<img src="resource/image/public/empty.gif" data-original="resource/image/thumbnail/matrix.png"
+														alt="黑客帝国二维码" width="146" height="146">
+														<span>
+															黑客帝国														</span>
+													</label>
+												</li>
+																					</ul>
+									</div>
+															</div>
+						</div>
+					</div>
+					<div class="module mod-intro">
+						<div class="hd">
+							<h3>二维码美化介绍</h3>
+						</div>
+						<div class="bd">
+							<p>
+								提供一百多套二维码美化模板，该二维码生成器可快速美化成想要生的二维码图片。每次进入该页面都会随机显示一个二维码美化模板，如需切换二维码风格，选择上列任何一个二维码模板图片即可。
+							</p>
+							<p>
+								二维码美化功能无需PS技术，把普通黑白二维码在线设计的更加创意，更加个性，更加美化，把微信二维码编辑的更加创意吸引粉丝，做一个动态二维码名片更吸引客户用手机扫描，通过在线生成二维码，制作各种多彩的主题创意二维码，在保证二维码识别率高效的前提下，让您的二维码视觉独一无二。联图二维码致力于通过技术及创意提升您原有二维码的扫码量，助力您的业务推广!
+							</p>
+							<p>
+								如果发现模板功能无法使用的情况，请切换为高级浏览器（如谷歌浏览器，360极速浏览器等），该二维码模板不提供对低端浏览器的支持。 如果文字内容较多的情况下，建议您先用手机先试扫二维码，以免造成无法识别的情况。
+								<br>
+								如果该二维码识别度不高，可通过下列方法检查：
+								<br>
+								1.检查网络是否正常，
+								<br>
+								2.减少输入的文本内容，
+								<br>
+								3.更换二维码美化模板。
+							</p>
+						</div>
+					</div>
+					<div class="mod-fixed">
+						<img src="resource/image/public/wechat.png" alt="联图二维码小程序" width="200"
+						height="228" />
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="inner">
+					<div class="mod-foot">
+						<p>
+							<a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">闽ICP备14017204号-3</a>
+							Copyright &copy;
+							2018 liantu.com, All Rights Reserved stat
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="resource/script/dist/lib/jquery.js"></script>
+		<script type="text/javascript" src="resource/script/dist/lib/qrcode.js"></script>
+		<script type="text/javascript" src="resource/script/dist/plugins/jquery.tabs.js"></script>
+		<script type="text/javascript" src="resource/script/dist/index.js"></script>
+		<div class="hide">
+			<script>
+				var _hmt = _hmt || []; (function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?0635661383aaa290c3690f94520a59f1";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+			</script>
+		</div>
+	</body>
+</html>
